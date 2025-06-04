@@ -57,7 +57,7 @@
   .ProductListSummary {
     background-color: #fff;
     padding: 1rem;
-    width: 87vw;
+    width: calc(920px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,11 +80,12 @@
   }
   
   .ProductListSummary div img {
-    border-radius: 5px;
-    border:1px solid black;
     height: auto;
     width: auto;  
     max-height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
     object-fit: contain; 
     box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.3); 
     transition: transform 0.2s ease;
