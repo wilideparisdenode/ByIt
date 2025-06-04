@@ -1,0 +1,23 @@
+
+select,input[type="text"],.searchP{
+    height: 30px;
+    /* width: 20vw; */
+}
+
+.searchP{
+    height:fit-content;
+background-color: red;
+
+}
+.search_icon{
+    background-color: #131416;
+    color: #F1FEC6;
+    padding: 4px;
+    border-radius: 3px;
+
+}
+.nav-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

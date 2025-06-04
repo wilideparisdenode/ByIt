@@ -1,0 +1,105 @@
+/* === Shared Card Styles === */
+.card, .card1 {
+    background-color: #fff;
+    font-size: 12px;
+    padding: 16px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+    height: 350px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  /* === Card1 Specific Styles === */
+  .card1 section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    text-align: start;
+  }
+  
+  .card1 h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card1 section div img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* === Card (Second Card) Specific Styles === */
+  .card img {
+    width: 250px;
+    object-fit: contain;
+    max-height: 200px;
+  }
+  
+  .card .link,
+  .ProductListSummary {
+    text-align: start;
+    z-index: 1;
+  }
+  
+  /* === Product List Summary === */
+  .ProductListSummary {
+    background-color: #fff;
+    padding: 1rem;
+    width: 87vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 8px;
+  }
+  
+  .ProductListSummary h2 {
+    align-self: flex-start;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .ProductListSummary div {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    overflow-x: scroll;
+    /* padding-bottom: 0.5rem; */
+  }
+  
+  .ProductListSummary div img {
+    border-radius: 5px;
+    border:1px solid black;
+    height: auto;
+    width: auto;  
+    max-height: 150px;
+    object-fit: contain; 
+    box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s ease;
+
+}
+.ProductListSummary div img:hover {
+    transform: translateY(-4px); /* optional hover effect */
+  }
+  
+  /* === Product Card Container === */
+  .ProductCart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 25px;
+  }
+  

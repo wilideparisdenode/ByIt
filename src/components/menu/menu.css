@@ -1,0 +1,37 @@
+.menu {
+    position: absolute;
+    top: 55px;
+    left: 115px;
+    background-color: #F1FEC6;
+    border-radius: 5px;
+    width: 150px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+  }
+  
+  .menu.open {
+    max-height: 500px; /* adjust depending on number of items */
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .menu ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .menu ul li {
+    list-style-type: none;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  

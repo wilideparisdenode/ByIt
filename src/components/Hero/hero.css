@@ -1,0 +1,33 @@
+/* hero.css */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(55deg, #29339B, #74A4BC) ;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    text-align: center;
+    z-index: 10;
+    padding: 2rem;
+    max-width: 800px;
+  }
+  
+  .hero-3d-container {
+    width: 100vw;
+    height: 70%;
+    margin-top: 2rem;
+  }
+
+  .shop_now{
+    background-color: #74A4BC;
+    padding:10px;
+    border-radius: 25px;
+    border:none;
+  }

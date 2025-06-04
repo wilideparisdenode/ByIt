@@ -1,0 +1,44 @@
+{
+  "watches": [
+    { "id": 1, "name": "Watch 1", "withBg": "/img2/w1.jpeg" },
+    { "id": 2, "name": "Watch 2", "withBg": "/img2/w2.jpeg" },
+    { "id": 3, "name": "Watch 3", "withBg": "/img2/w3.jpeg" },
+    { "id": 4, "name": "Watch 4", "withBg": "/img2/w4.jpeg" },
+    { "id": 5, "name": "Watch 5", "withBg": "/img2/w5.jpeg" }
+  ],
+  "phones": [
+    { "id": 6, "name": "Phone 1", "withBg": "/img2/p1.jpeg" },
+    { "id": 7, "name": "Phone 2", "withBg": "/img2/p2.jpeg" },
+    { "id": 8, "name": "Phone 3", "withBg": "/img2/p3.jpeg" },
+    { "id": 9, "name": "Phone 4", "withBg": "/img2/p4.jpeg" },
+    { "id": 10, "name": "Phone 5", "withBg": "/img2/p5.jpeg" }
+  ],
+  "screens": [
+    { "id": 11, "name": "Screen 1", "withBg": "/img2/sc1.jpeg" },
+    { "id": 12, "name": "Screen 2", "withBg": "/img2/sc2.jpeg" },
+    { "id": 13, "name": "Screen 3", "withBg": "/img2/sc3.jpeg" },
+    { "id": 14, "name": "Screen 4", "withBg": "/img2/sc4.jpeg" }
+  ],
+  "chargers": [
+    { "id": 16, "name": "Charger 1", "withBg": "/img2/ch1.jpeg" },
+    { "id": 17, "name": "Charger 2", "withBg": "/img2/ch2.jpeg" },
+    { "id": 18, "name": "Charger 3", "withBg": "/img2/ch3.jpeg" },
+    { "id": 19, "name": "Charger 4", "withBg": "/img2/ch4.jpeg" },
+    { "id": 20, "name": "Charger 5", "withBg": "/img2/ch5.jpeg" },
+    { "id": 15, "name": "Charger 6", "withBg": "/img2/ch6.jpeg" },
+    { "id": 26, "name": "Charger 7", "withBg": "/img2/ch7.jpeg" }
+  ],
+  "mice": [
+    { "id": 21, "name": "Mouse 1", "withBg": "/img2/m1.jpeg" },
+    { "id": 22, "name": "Mouse 2", "withBg": "/img2/m2.jpeg" },
+    { "id": 23, "name": "Mouse 3", "withBg": "/img2/m3.jpeg" },
+    { "id": 24, "name": "Mouse 4", "withBg": "/img2/m4.jpeg" }
+  ],
+  "laptops": [
+    { "id": 30, "name": "Laptop 1", "withBg": "/img2/l1.jpeg" },
+    { "id": 31, "name": "Laptop 2", "withBg": "/img2/l2.jpeg" },
+    { "id": 32, "name": "Laptop 3", "withBg": "/img2/l3.jpeg" },
+    { "id": 33, "name": "Laptop 4", "withBg": "/img2/l4.jpeg" },
+    { "id": 34, "name": "Laptop 5", "withBg": "/img2/l5.jpeg" }
+  ]
+}
