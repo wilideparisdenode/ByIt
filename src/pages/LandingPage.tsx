@@ -1,4 +1,3 @@
-import React from 'react'
 import ProductCartComponent from '../components/productCartComponent/ProductCartComponent';
 import Hero from '../components/Hero/Hero3DSection';
 import FaqSection from '../components/FaqSection/FaqSection';

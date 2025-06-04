@@ -1,16 +1,17 @@
-import { useRef } from 'react'
-import { useFrame } from '@react-three/fiber'
-import {  useGLTF } from '@react-three/drei'
+import { useRef } from 'react';
+import { useFrame } from '@react-three/fiber';
+import { useGLTF } from '@react-three/drei';
+import * as THREE from 'three'; // Import THREE for type assertions
 
- export default function ComputerModel() {
-  const { scene } = useGLTF('/laptop_dell_latitude_5400.glb')
-  const modelRef = useRef();
+export default function ComputerModel() {
+  const { scene } = useGLTF('/laptop_dell_latitude_5400.glb');
+  const modelRef = useRef<THREE.Object3D>(null); // Initialize with null
   
-  useFrame((state, delta) => {
+  useFrame((_, delta) => { // Removed unused state
     if (modelRef.current) {
-      modelRef.current.rotation.y += delta * 0.2 // Slow rotation speed
+      (modelRef.current as THREE.Object3D).rotation.y += delta * 0.2; // Type assertion
     }
-  })
+  });
 
   return (
     <primitive 
@@ -19,5 +20,5 @@ import {  useGLTF } from '@react-three/drei'
       scale={1.2}
       position={[0, -1, 0]}
     />
-  )
+  );
 }
