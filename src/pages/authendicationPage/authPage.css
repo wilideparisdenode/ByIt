@@ -1,0 +1,112 @@
+/* Auth Page Form Styling */
+.authpage form {
+    width: 100%;
+    max-width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #333;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    margin: 80px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.authpage .img {
+    max-width: 200px;
+    margin-bottom: -2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.authpage .img img {
+    width: 30%;
+    margin-right: -1rem;
+}
+
+.authpage form label, 
+.authpage form button {
+    display: block;
+    width: 100%;
+}
+
+/* Button Styling */
+.authpage form button {
+    background-color: #007bff;
+    border-radius: 5px;
+    border: none;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.authpage form button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Styling */
+.authpage form input {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid #1e88e5;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    padding-left: 40px; /* Space for icon */
+}
+
+/* Focus effect for inputs */
+.authpage form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Placeholder Styling */
+.authpage form input::placeholder {
+    color: #888;
+    opacity: 1;
+    font-style: italic;
+}
+
+/* Input with icon inside */
+.authpage form .input-with-icon {
+    position: relative;
+}
+
+.authpage form .input-with-icon i {
+    position: absolute;
+    left: 10px; /* Adjust based on icon size */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px; /* Icon size */
+    color: #1e88e5; /* Icon color */
+}
+
+/* Example of Bootstrap Icon in the input */
+.authpage .input-with-icon input[type="email"],
+.authpage .input-with-icon input[type="password"],
+.authpage .input-with-icon input[type="text"] {
+    padding-left: 40px; /* Adjust padding for icon */
+}
+
+/* Making the form responsive */
+@media (max-width: 480px) {
+    .authpage form {
+        padding: 15px;
+        width: 90%;
+    }
+    .authpage .img img {
+        width: 50%;
+    }
+}

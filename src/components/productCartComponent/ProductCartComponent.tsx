@@ -1,26 +1,18 @@
 import "./productCart.css";
+import type { Product,Products } from "../types/types";
 import { useEffect, useState } from "react";
 
-interface Product {
-  id: number;
-  name: string;
-  withBg: string;
-}
 
-interface Products {
-  watches: Product[];
-  phones: Product[];
-  screens: Product[];
-  chargers: Product[];
-  mice: Product[];
-  laptops: Product[];
-}
+
+
 
 // SAFE DEFAULT VALUES
 const EMPTY_PRODUCT: Product = {
   id: -1,
   name: '',
-  withBg: ''
+  withBg: '',
+  description:'',
+  price:0
 };
 
 const EMPTY_PRODUCTS: Products = {

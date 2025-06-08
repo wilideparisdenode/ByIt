@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./menu.css";
 
 export default function Menu({ isOpen }: { isOpen: boolean }) {
@@ -8,6 +9,7 @@ export default function Menu({ isOpen }: { isOpen: boolean }) {
         <li><a href="">About</a></li>
         <li><a href="">Shop</a></li>
         <li><a href="">FAQs</a></li>
+        <li><Link to="sign-in">Signin</Link></li>
       </ul>
     </div>
   );

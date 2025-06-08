@@ -1,44 +1,284 @@
 {
   "watches": [
-    { "id": 1, "name": "Watch 1", "withBg": "/img2/w1.jpeg" },
-    { "id": 2, "name": "Watch 2", "withBg": "/img2/w2.jpeg" },
-    { "id": 3, "name": "Watch 3", "withBg": "/img2/w3.jpeg" },
-    { "id": 4, "name": "Watch 4", "withBg": "/img2/w4.jpeg" },
-    { "id": 5, "name": "Watch 5", "withBg": "/img2/w5.jpeg" }
+    {
+      "id": 1,
+      "name": "Watch 1",
+      "withBg": "/img2/w1.jpeg",
+      "description": "Stylish and modern timepiece for everyday use.",
+      "price": 49.99,
+      "category": "Watch",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Watch 2",
+      "withBg": "/img2/w2.jpeg",
+      "description": "Elegant design with a durable strap.",
+      "price": 59.99,
+      "category": "Watch",
+      "rating": 4.2
+    },
+    {
+      "id": 3,
+      "name": "Watch 3",
+      "withBg": "/img2/w3.jpeg",
+      "description": "Smartwatch with fitness tracking features.",
+      "price": 89.99,
+      "category": "Watch",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "name": "Watch 4",
+      "withBg": "/img2/w4.jpeg",
+      "description": "Classic analog watch with a leather band.",
+      "price": 39.99,
+      "category": "Watch",
+      "rating": 4.1
+    },
+    {
+      "id": 5,
+      "name": "Watch 5",
+      "withBg": "/img2/w5.jpeg",
+      "description": "Luxury watch with water-resistant build.",
+      "price": 129.99,
+      "category": "Watch",
+      "rating": 4.9
+    }
   ],
   "phones": [
-    { "id": 6, "name": "Phone 1", "withBg": "/img2/p1.jpeg" },
-    { "id": 7, "name": "Phone 2", "withBg": "/img2/p2.jpeg" },
-    { "id": 8, "name": "Phone 3", "withBg": "/img2/p3.jpeg" },
-    { "id": 9, "name": "Phone 4", "withBg": "/img2/p4.jpeg" },
-    { "id": 10, "name": "Phone 5", "withBg": "/img2/p5.jpeg" }
+    {
+      "id": 6,
+      "name": "Phone 1",
+      "withBg": "/img2/p1.jpeg",
+      "description": "High-performance smartphone with great battery life.",
+      "price": 399.99,
+      "category": "Phone",
+      "rating": 4.6
+    },
+    {
+      "id": 7,
+      "name": "Phone 2",
+      "withBg": "/img2/p2.jpeg",
+      "description": "Compact phone with impressive camera features.",
+      "price": 299.99,
+      "category": "Phone",
+      "rating": 4.3
+    },
+    {
+      "id": 8,
+      "name": "Phone 3",
+      "withBg": "/img2/p3.jpeg",
+      "description": "Affordable phone with large storage capacity.",
+      "price": 249.99,
+      "category": "Phone",
+      "rating": 4.0
+    },
+    {
+      "id": 9,
+      "name": "Phone 4",
+      "withBg": "/img2/p4.jpeg",
+      "description": "Flagship device with high-speed processing.",
+      "price": 699.99,
+      "category": "Phone",
+      "rating": 4.8
+    },
+    {
+      "id": 10,
+      "name": "Phone 5",
+      "withBg": "/img2/p5.jpeg",
+      "description": "Great value phone with sleek design.",
+      "price": 349.99,
+      "category": "Phone",
+      "rating": 4.4
+    }
   ],
   "screens": [
-    { "id": 11, "name": "Screen 1", "withBg": "/img2/sc1.jpeg" },
-    { "id": 12, "name": "Screen 2", "withBg": "/img2/sc2.jpeg" },
-    { "id": 13, "name": "Screen 3", "withBg": "/img2/sc3.jpeg" },
-    { "id": 14, "name": "Screen 4", "withBg": "/img2/sc4.jpeg" }
+    {
+      "id": 11,
+      "name": "Screen 1",
+      "withBg": "/img2/sc1.jpeg",
+      "description": "Full HD monitor with sharp color accuracy.",
+      "price": 129.99,
+      "category": "Screen",
+      "rating": 4.5
+    },
+    {
+      "id": 12,
+      "name": "Screen 2",
+      "withBg": "/img2/sc2.jpeg",
+      "description": "Ultra-wide screen for immersive viewing.",
+      "price": 199.99,
+      "category": "Screen",
+      "rating": 4.7
+    },
+    {
+      "id": 13,
+      "name": "Screen 3",
+      "withBg": "/img2/sc3.jpeg",
+      "description": "4K resolution screen with HDR support.",
+      "price": 299.99,
+      "category": "Screen",
+      "rating": 4.8
+    },
+    {
+      "id": 14,
+      "name": "Screen 4",
+      "withBg": "/img2/sc4.jpeg",
+      "description": "Portable screen ideal for travel or work on-the-go.",
+      "price": 179.99,
+      "category": "Screen",
+      "rating": 4.4
+    }
   ],
   "chargers": [
-    { "id": 16, "name": "Charger 1", "withBg": "/img2/ch1.jpeg" },
-    { "id": 17, "name": "Charger 2", "withBg": "/img2/ch2.jpeg" },
-    { "id": 18, "name": "Charger 3", "withBg": "/img2/ch3.jpeg" },
-    { "id": 19, "name": "Charger 4", "withBg": "/img2/ch4.jpeg" },
-    { "id": 20, "name": "Charger 5", "withBg": "/img2/ch5.jpeg" },
-    { "id": 15, "name": "Charger 6", "withBg": "/img2/ch6.jpeg" },
-    { "id": 26, "name": "Charger 7", "withBg": "/img2/ch7.jpeg" }
+    {
+      "id": 16,
+      "name": "Charger 1",
+      "withBg": "/img2/ch1.jpeg",
+      "description": "Fast-charging USB-C wall adapter.",
+      "price": 19.99,
+      "category": "Charger",
+      "rating": 4.6
+    },
+    {
+      "id": 17,
+      "name": "Charger 2",
+      "withBg": "/img2/ch2.jpeg",
+      "description": "Compact wireless charger for phones.",
+      "price": 24.99,
+      "category": "Charger",
+      "rating": 4.3
+    },
+    {
+      "id": 18,
+      "name": "Charger 3",
+      "withBg": "/img2/ch3.jpeg",
+      "description": "Universal charger compatible with multiple devices.",
+      "price": 29.99,
+      "category": "Charger",
+      "rating": 4.2
+    },
+    {
+      "id": 19,
+      "name": "Charger 4",
+      "withBg": "/img2/ch4.jpeg",
+      "description": "Multi-port charging station for all devices.",
+      "price": 34.99,
+      "category": "Charger",
+      "rating": 4.5
+    },
+    {
+      "id": 20,
+      "name": "Charger 5",
+      "withBg": "/img2/ch5.jpeg",
+      "description": "High-capacity power bank for long use.",
+      "price": 39.99,
+      "category": "Charger",
+      "rating": 4.6
+    },
+    {
+      "id": 15,
+      "name": "Charger 6",
+      "withBg": "/img2/ch6.jpeg",
+      "description": "Portable solar-powered charger.",
+      "price": 49.99,
+      "category": "Charger",
+      "rating": 4.7
+    },
+    {
+      "id": 26,
+      "name": "Charger 7",
+      "withBg": "/img2/ch7.jpeg",
+      "description": "Smart charger with auto shut-off technology.",
+      "price": 27.99,
+      "category": "Charger",
+      "rating": 4.3
+    }
   ],
   "mice": [
-    { "id": 21, "name": "Mouse 1", "withBg": "/img2/m1.jpeg" },
-    { "id": 22, "name": "Mouse 2", "withBg": "/img2/m2.jpeg" },
-    { "id": 23, "name": "Mouse 3", "withBg": "/img2/m3.jpeg" },
-    { "id": 24, "name": "Mouse 4", "withBg": "/img2/m4.jpeg" }
+    {
+      "id": 21,
+      "name": "Mouse 1",
+      "withBg": "/img2/m1.jpeg",
+      "description": "Ergonomic mouse with silent clicks.",
+      "price": 14.99,
+      "category": "Mouse",
+      "rating": 4.4
+    },
+    {
+      "id": 22,
+      "name": "Mouse 2",
+      "withBg": "/img2/m2.jpeg",
+      "description": "Gaming mouse with customizable buttons.",
+      "price": 29.99,
+      "category": "Mouse",
+      "rating": 4.6
+    },
+    {
+      "id": 23,
+      "name": "Mouse 3",
+      "withBg": "/img2/m3.jpeg",
+      "description": "Wireless mouse with long battery life.",
+      "price": 19.99,
+      "category": "Mouse",
+      "rating": 4.3
+    },
+    {
+      "id": 24,
+      "name": "Mouse 4",
+      "withBg": "/img2/m4.jpeg",
+      "description": "Compact mouse for travel and portability.",
+      "price": 17.99,
+      "category": "Mouse",
+      "rating": 4.1
+    }
   ],
   "laptops": [
-    { "id": 30, "name": "Laptop 1", "withBg": "/img2/l1.jpeg" },
-    { "id": 31, "name": "Laptop 2", "withBg": "/img2/l2.jpeg" },
-    { "id": 32, "name": "Laptop 3", "withBg": "/img2/l3.jpeg" },
-    { "id": 33, "name": "Laptop 4", "withBg": "/img2/l4.jpeg" },
-    { "id": 34, "name": "Laptop 5", "withBg": "/img2/l5.jpeg" }
+    {
+      "id": 30,
+      "name": "Laptop 1",
+      "withBg": "/img2/l1.jpeg",
+      "description": "Lightweight laptop for students and professionals.",
+      "price": 599.99,
+      "category": "Laptop",
+      "rating": 4.5
+    },
+    {
+      "id": 31,
+      "name": "Laptop 2",
+      "withBg": "/img2/l2.jpeg",
+      "description": "High-end gaming laptop with advanced graphics.",
+      "price": 1299.99,
+      "category": "Laptop",
+      "rating": 4.8
+    },
+    {
+      "id": 32,
+      "name": "Laptop 3",
+      "withBg": "/img2/l3.jpeg",
+      "description": "Business laptop with fast performance and security features.",
+      "price": 999.99,
+      "category": "Laptop",
+      "rating": 4.6
+    },
+    {
+      "id": 33,
+      "name": "Laptop 4",
+      "withBg": "/img2/l4.jpeg",
+      "description": "2-in-1 convertible laptop with touchscreen.",
+      "price": 849.99,
+      "category": "Laptop",
+      "rating": 4.4
+    },
+    {
+      "id": 34,
+      "name": "Laptop 5",
+      "withBg": "/img2/l5.jpeg",
+      "description": "Budget-friendly laptop with solid specs.",
+      "price": 479.99,
+      "category": "Laptop",
+      "rating": 4.2
+    }
   ]
 }
