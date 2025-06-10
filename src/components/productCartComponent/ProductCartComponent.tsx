@@ -1,9 +1,9 @@
 import "./productCart.css";
 import type { Product,Products } from "../types/types";
 import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-
-
+import { Navigation, Autoplay } from 'swiper/modules';
 
 
 // SAFE DEFAULT VALUES
@@ -79,11 +79,37 @@ function ProductCartOne({
   );
 }
 
-function ProductListSumarry() {
+function ProductListSummary() {
   return (
-    <div className="ProductListSummary">
-      <h2>Product List overview</h2>
-      <div><img src="/img/c8.jpeg" alt="" /><img src="/img/ch3.jpeg" alt="" /><img src="/img/m2.jpeg" alt="" /><img src="/img/N1.jpeg" alt="" /><img src="/img/p5.jpeg" alt="" /><img src="/img/r7.jpeg" alt="" /></div>
+    <div className="product-list-summary">
+      <h2>Computer Parts</h2>
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        spaceBetween={20}
+        slidesPerView={4}
+        loop={true}
+        navigation={true}
+        autoplay={{ delay: 3000 }}
+        breakpoints={{
+          320: { slidesPerView: 1.5 },
+          640: { slidesPerView: 2.5 },
+          1024: { slidesPerView: 4 },
+        }}
+      >
+        {[
+  '/img/c8.jpeg',
+  '/img/ch3.jpeg',
+  '/img/m2.jpeg',
+  '/img/N1.jpeg',
+  '/img/p5.jpeg',
+  '/img/r7.jpeg',].map((src, index) => (
+          <SwiperSlide key={index}>
+            <div className="slide-card">
+              <img src={src} alt={`Product ${index}`} className="slide-img" />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   )
 }
@@ -137,7 +163,7 @@ export default function ProductCartComponent() {
       {renderIfValid('chargers', 3)}
       <ProductCartOne product={products} index={3} />
       {renderIfValid('screens', 1)}
-      <ProductListSumarry/>
+      <ProductListSummary/>
     </div>
   );
 }

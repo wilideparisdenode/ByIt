@@ -15,12 +15,12 @@ export default function Hero() {
           {/* <ambientLight intensity={0} /> */}
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
           {/* <pointLight position={[-10, -10, -10]} /> */}
-          <directionalLight position={[10,10,10]} intensity={0.5} />
+          <directionalLight position={[10,10,10]} intensity={1} />
           <ComputerModel />
           <OrbitControls 
-            enableZoom={true}
+            enableZoom={false}
             enablePan={true}
-            enableRotate={true}
+            enableRotate={false}
           />
         </Canvas>
       </div>

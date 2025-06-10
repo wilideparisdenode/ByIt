@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import ViewProductPage from './pages/ViewProductPage/ViewProductPage';
 import ProductListPage from './pages/productListPage/ProductListPage';
 import AuthPage from './pages/authendicationPage/AuthPage';
+import LogInPage from './pages/authendicationPage/LogInPage';
 
 function App() {
 
@@ -19,9 +20,11 @@ function App() {
     <Routes>
       <Route path='/' element={<LandingPage/>} />
       
-     <Route path='/product-overview' element={<ViewProductPage/>}/>
+     <Route path='/product-overview/:id' element={<ViewProductPage/>}/>
      <Route path='/product-list' element={<ProductListPage/>}/>
      <Route path='sign-in' element={<AuthPage/>}/>
+     <Route path='log-in' element={<LogInPage/>}/>
+
     </Routes>  
      
      <Footer/>

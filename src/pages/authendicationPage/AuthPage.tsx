@@ -1,9 +1,30 @@
 import "./authPage.css";
-
+import { useState } from "react";
+import type { FormData } from "../../components/types/types";
 export default function AuthPage() {
+  const [formData,setFormData]=useState<FormData>({
+    name:"",
+    userName:"",
+    email:"",
+    password:""
+  });
+  
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Submitted data:", formData);
+  };
+
+
   return (
     <div className="authpage">
-      <form>
+      <form  onSubmit={handleSubmit}>
         <div className="img">
           <img
             src="/buyIt Shopify Logo Maker d742a2b4a5c7cbb2db2b4645c12231bd/logo-transparent.png"
@@ -19,6 +40,8 @@ export default function AuthPage() {
               type="text"
               name="name"
               id="name"
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Enter your name"
               required
             />
@@ -28,11 +51,16 @@ export default function AuthPage() {
           <div className="input-with-icon">
             <i className="bi bi-person-badge"></i>
             <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Enter your username"
-              required
+
+type="text"
+name="userName"
+id="userName"
+value={formData.userName}
+onChange={handleChange}
+
+
+placeholder="Enter your usernam"
+required
             />
           </div>
 
@@ -43,6 +71,10 @@ export default function AuthPage() {
               type="email"
               name="email"
               id="email"
+              value={formData.email}
+              onChange={handleChange}
+             
+              
               placeholder="Enter your email"
               required
             />
@@ -55,6 +87,9 @@ export default function AuthPage() {
               type="password"
               name="password"
               id="password"
+              onChange={handleChange}
+             value={formData.password}
+             
               placeholder="Enter your password"
               required
             />

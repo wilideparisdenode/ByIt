@@ -16,6 +16,23 @@
     name: string;
     withBg: string;
     description:string;
+    category:string;
     price:number;
   }
 
+export type Option={
+  method:string,
+  headers: Record<string, string>,
+    body:string
+}
+export type Data={
+  data:{}
+}
+
+export type FormData={
+  name?:string,
+  userName?:string,
+  email?:string,
+  password?:string
+
+}

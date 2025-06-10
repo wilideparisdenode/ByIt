@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three'; // Import THREE for type assertions
 
 export default function ComputerModel() {
-  const { scene } = useGLTF('/laptop_dell_latitude_5400.glb');
+  const { scene } = useGLTF('/gaming_desktop_pc_blend_file.glb');
   const modelRef = useRef<THREE.Object3D>(null); // Initialize with null
   
   useFrame((_, delta) => { // Removed unused state
@@ -17,8 +17,9 @@ export default function ComputerModel() {
     <primitive 
       ref={modelRef}
       object={scene} 
-      scale={1.2}
-      position={[0, -1, 0]}
+      scale={0.5}
+      position={[0, -2.1, 0]}
+      rotation={[0, -Math.PI / 4, 0]} 
     />
   );
 }

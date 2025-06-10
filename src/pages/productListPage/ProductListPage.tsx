@@ -1,31 +1,18 @@
-import { useEffect, useState } from "react"
-import type { Product, Products } from "../../components/types/types"
+// import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
+import type { Product, Products } from "../../components/types/types";
+ import { useFetch } from "../../hooks/useFetch";
+
 import "./ProductListPage.css" 
 type ProductCategory = keyof Products;
 export default function ProductListPage() {
-    const [data, setData] = useState<Products | null>(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
+   const { data, isPending, error}=useFetch<Products>("./data.json");
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch("./data.json");
-                if (!res.ok) {
-                    throw new Error(`HTTP error! status: ${res.status}`);
-                }
-                const d = await res.json();
-                setData(d);
-            } catch (err) {
-                setError(err instanceof Error ? err.message : 'An unknown error occurred');
-            } finally {
-                setLoading(false);
-            }
-        }
-        fetchData();
-    }, []);
+//    function handleClick(){
 
-    if (loading) return <div className="loading">Loading...</div>;
+//    }
+
+    if (isPending) return <div className="loading">Loading...</div>;
     if (error) return <div className="error">Error: {error}</div>;
     if (!data) return <div className="no-data">No products available</div>;
     const categories = Object.keys(data) as ProductCategory[];
@@ -48,7 +35,7 @@ export default function ProductListPage() {
                                     <h4 className="product-name">{item.name}</h4>
                                     <p className="product-description">{item.description}</p>
                                     <p className="product-price">${item.price.toFixed(2)}</p>
-                                    <button className="buy-button">Add to Cart</button>
+                                    <button className="buy-button"><Link to={"/product-overview/"+item.id}> Add to Cart</Link>  </button>
                                 </div>
                             </div>
                         ))}
