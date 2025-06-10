@@ -12,7 +12,9 @@ const EMPTY_PRODUCT: Product = {
   name: '',
   withBg: '',
   description:'',
-  price:0
+  price:0,
+  category:''
+
 };
 
 const EMPTY_PRODUCTS: Products = {
