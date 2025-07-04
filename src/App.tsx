@@ -9,7 +9,9 @@ import Footer from './components/Footer/Footer';
 import ViewProductPage from './pages/ViewProductPage/ViewProductPage';
 import ProductListPage from './pages/productListPage/ProductListPage';
 import AuthPage from './pages/authendicationPage/AuthPage';
+import FaqSection from './components/FaqSection/FaqSection';
 import LogInPage from './pages/authendicationPage/LogInPage';
+import AboutPage from './components/AboutUs/AboutUs';
 
 function App() {
 
@@ -22,8 +24,12 @@ function App() {
       
      <Route path='/product-overview/:id' element={<ViewProductPage/>}/>
      <Route path='/product-list' element={<ProductListPage/>}/>
-     <Route path='sign-in' element={<AuthPage/>}/>
-     <Route path='log-in' element={<LogInPage/>}/>
+     <Route path='/sign-in' element={<AuthPage/>}/>
+     <Route path='/log-in' element={<LogInPage/>}/>
+     <Route path='/faqs' element={<FaqSection/>}/>
+     <Route path='/about' element={<AboutPage/>}/>
+
+
 
     </Routes>  
      

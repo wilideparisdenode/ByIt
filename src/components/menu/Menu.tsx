@@ -5,10 +5,12 @@ export default function Menu({ isOpen }: { isOpen: boolean }) {
   return (
     <div className={`menu ${isOpen ? "open" : "closed"}`}>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
+        <li><Link to="/">home</Link></li>
+        <li><Link to="/about">about</Link></li>
         <li><Link to="/product-list">Shop</Link></li>
-        <li><Link to="/product-list">FAQs</Link></li>
+        <li><Link to="/faqs">FAQs</Link></li>
+        <li><Link to="log-in">login</Link></li>
+
         <li><Link to="sign-in">Signin</Link></li>
       </ul>
     </div>

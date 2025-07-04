@@ -98,6 +98,9 @@ body, h1, h2, h3, h4, p {
   .buy-button:hover {
     background-color: #1565c0;
   }
+  .buy-button a {
+   color: wheat;
+  }
   
   /* States */
   .loading,

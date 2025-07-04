@@ -2,11 +2,13 @@ import ProductCartComponent from '../../components/productCartComponent/ProductC
 import Hero from '../../components/Hero/Hero3DSection';
 import FaqSection from '../../components/FaqSection/FaqSection';
 import "../ViewProductPage/ViewProductPage.css"
+import AboutPage from '../../components/AboutUs/AboutUs';
 export default function LandingPage() {
   return (
     <div>
       <Hero/>
       <ProductCartComponent/>
+      <AboutPage/>
       <FaqSection/>
     </div>
   )

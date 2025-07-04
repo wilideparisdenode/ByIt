@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/drei": "^10.0.8",
     "@react-three/fiber": "^9.1.2",
+    "axios": "^1.10.0",
     "bootstrap-icons": "^1.13.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -17,10 +18,10 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h3 className="footer-heading">Quick Links</h3>
           <ul className="footer-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/product-list">Shop</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
@@ -28,10 +29,10 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h3 className="footer-heading">Customer Service</h3>
           <ul className="footer-links">
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/returns">Returns</a></li>
-            <li><a href="/shipping">Shipping</a></li>
-            <li><a href="/terms">Terms & Conditions</a></li>
+            <li><Link to="/faq">FAQ</Link></li>
+            <li><Link to="/returns">Returns</Link></li>
+            <li><Link to="/shipping">Shipping</Link></li>
+            <li><Link to="/terms">Terms & Conditions</Link></li>
           </ul>
         </div>
 
