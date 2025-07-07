@@ -14,6 +14,7 @@ import LogInPage from './pages/authendicationPage/LogInPage';
 import AboutPage from './components/AboutUs/AboutUs';
 import Profile from './pages/profilePage/Profile';
 import ProductList from './pages/productListingPage/ProductList';
+import CheckoutPage from './pages/paymentpage/CheckoutPage';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
      <Route path='/product-cart' element={<ProductList/>}/>
 
      <Route path='/profile' element={<Profile/>}/>
-
+     <Route path='/checkoutpage' element={<CheckoutPage/>}/>
     </Routes>  
      
      <Footer/>

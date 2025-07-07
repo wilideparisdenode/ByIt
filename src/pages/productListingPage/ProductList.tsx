@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { addItem, updateQuantity } from "../../components/cartSlice";
+import { Link } from "react-router-dom";
 import "./procductList.css";
 
 export default function ProductList() {
@@ -74,7 +75,7 @@ export default function ProductList() {
           <p className="text">Subtotal</p>
           <p>{subtotal.toFixed(2)} FCFA</p>
         </div>
-        <button className="btn warning">Checkout</button>
+        <button className="btn warning"><Link to="/checkoutpage">Checkout</Link></button> 
       </div>
     </div>
   );
