@@ -9,6 +9,18 @@ type ProductCategory = keyof Products;
 export default function ProductListPage() {
   const { data, isPending, error } = useFetch<Products>("./data.json");
 
+
+
+  
+  if (data) {
+    Object.keys(data).forEach((key) => {
+      const items = data[key as keyof Products]; // Access the array of products
+      items.forEach((item) => {
+        item.quantity = 0; // Safely set the quantity
+      });
+    });
+  }
+
   const useQuery = () => new URLSearchParams(useLocation().search);
   const query = useQuery().get('q')?.toLowerCase() || '';
   console.log(query)
@@ -32,7 +44,7 @@ export default function ProductListPage() {
         });
 
         if (filteredProducts.length === 0) return null; // hide empty categories
-
+            
         return (
           <section key={category} className="product-category">
             <h2 className="category-title">{category}</h2>

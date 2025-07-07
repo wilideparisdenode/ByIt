@@ -12,6 +12,8 @@ import AuthPage from './pages/authendicationPage/AuthPage';
 import FaqSection from './components/FaqSection/FaqSection';
 import LogInPage from './pages/authendicationPage/LogInPage';
 import AboutPage from './components/AboutUs/AboutUs';
+import Profile from './pages/profilePage/Profile';
+import ProductList from './pages/productListingPage/ProductList';
 
 function App() {
 
@@ -28,8 +30,9 @@ function App() {
      <Route path='/log-in' element={<LogInPage/>}/>
      <Route path='/faqs' element={<FaqSection/>}/>
      <Route path='/about' element={<AboutPage/>}/>
+     <Route path='/product-cart' element={<ProductList/>}/>
 
-
+     <Route path='/profile' element={<Profile/>}/>
 
     </Routes>  
      

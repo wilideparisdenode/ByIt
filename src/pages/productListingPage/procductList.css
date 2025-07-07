@@ -1,0 +1,65 @@
+.ProductsCart .item,.ProductsCart .item div{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+align-items: center;
+height: 5rem;
+background-color: #f9f9f9;
+}
+.ProductsCart .item .one .Pinfor,.Pprice{
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: start !important;
+
+}
+.ProductsCart{
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+}
+.ProductsCart .item img{
+    width: 4rem;
+}
+.ProductsCart .item{
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 70%;
+}
+.Pprice div .btn{
+    width: 1.3rem;
+    padding: .3rem;
+    margin: .2rem;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+.Pprice div .btn:hover{
+    cursor: pointer;
+}
+.checkout,.checkout div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.checkout div{
+    width: 70%;
+    padding: 2rem;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+.checkout .btn{
+background-color: rgb(4, 131, 4);
+padding: 1rem;
+border: none;
+width: 7rem;
+border-radius: 5px;
+}
+.checkout .text{
+    font-size: 20px;
+    color: blue;
+    font-weight: 4rem;
+}
