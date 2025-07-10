@@ -2,283 +2,265 @@
   "watches": [
     {
       "id": 1,
-      "name": "Watch 1",
+      "name": "Chronos Elegance",
       "withBg": "/img2/w1.jpeg",
-      "description": "Stylish and modern timepiece for everyday use.",
-      "price": 49.99,
+      "description": "Sleek stainless steel smartwatch with heart rate monitoring and 14-day battery life.",
+      "price": 249.99,
       "category": "Watch",
       "rating": 4.5
     },
     {
       "id": 2,
-      "name": "Watch 2",
+      "name": "Mariner Pro Diver",
       "withBg": "/img2/w2.jpeg",
-      "description": "Elegant design with a durable strap.",
-      "price": 59.99,
-      "category": "Watch",
-      "rating": 4.2
-    },
-    {
-      "id": 3,
-      "name": "Watch 3",
-      "withBg": "/img2/w3.jpeg",
-      "description": "Smartwatch with fitness tracking features.",
-      "price": 89.99,
+      "description": "Professional dive watch with 200m water resistance and luminous markers.",
+      "price": 349.99,
       "category": "Watch",
       "rating": 4.7
     },
     {
-      "id": 4,
-      "name": "Watch 4",
-      "withBg": "/img2/w4.jpeg",
-      "description": "Classic analog watch with a leather band.",
-      "price": 39.99,
+      "id": 3,
+      "name": "Urban Minimalist",
+      "withBg": "/img2/w3.jpeg",
+      "description": "Ultra-thin Japanese movement watch with genuine leather strap.",
+      "price": 179.99,
       "category": "Watch",
-      "rating": 4.1
+      "rating": 4.3
+    },
+    {
+      "id": 4,
+      "name": "Aero Sport Chronograph",
+      "withBg": "/img2/w4.jpeg",
+      "description": "Aviation-inspired watch with tachymeter bezel and sapphire crystal.",
+      "price": 299.99,
+      "category": "Watch",
+      "rating": 4.6
     },
     {
       "id": 5,
-      "name": "Watch 5",
+      "name": "Heritage Automatic",
       "withBg": "/img2/w5.jpeg",
-      "description": "Luxury watch with water-resistant build.",
-      "price": 129.99,
+      "description": "Handcrafted mechanical watch with exhibition case back.",
+      "price": 429.99,
       "category": "Watch",
-      "rating": 4.9
+      "rating": 4.8
     }
   ],
   "phones": [
     {
       "id": 6,
-      "name": "Phone 1",
+      "name": "Nebula X7 Pro",
       "withBg": "/img2/p1.jpeg",
-      "description": "High-performance smartphone with great battery life.",
-      "price": 399.99,
+      "description": "Flagship smartphone with 108MP camera and 120Hz AMOLED display.",
+      "price": 899.99,
+      "category": "Phone",
+      "rating": 4.7
+    },
+    {
+      "id": 7,
+      "name": "Polaris Lite",
+      "withBg": "/img2/p2.jpeg",
+      "description": "Compact powerhouse with all-day battery and professional-grade camera system.",
+      "price": 649.99,
+      "category": "Phone",
+      "rating": 4.5
+    },
+    {
+      "id": 8,
+      "name": "Horizon Max",
+      "withBg": "/img2/p3.jpeg",
+      "description": "6.9\" phablet with stylus support and desktop-grade productivity features.",
+      "price": 799.99,
       "category": "Phone",
       "rating": 4.6
     },
     {
-      "id": 7,
-      "name": "Phone 2",
-      "withBg": "/img2/p2.jpeg",
-      "description": "Compact phone with impressive camera features.",
-      "price": 299.99,
-      "category": "Phone",
-      "rating": 4.3
-    },
-    {
-      "id": 8,
-      "name": "Phone 3",
-      "withBg": "/img2/p3.jpeg",
-      "description": "Affordable phone with large storage capacity.",
-      "price": 249.99,
-      "category": "Phone",
-      "rating": 4.0
-    },
-    {
       "id": 9,
-      "name": "Phone 4",
+      "name": "Aurora Fold",
       "withBg": "/img2/p4.jpeg",
-      "description": "Flagship device with high-speed processing.",
-      "price": 699.99,
+      "description": "Next-gen foldable smartphone with seamless multi-tasking capabilities.",
+      "price": 1599.99,
       "category": "Phone",
-      "rating": 4.8
+      "rating": 4.4
     },
     {
       "id": 10,
-      "name": "Phone 5",
+      "name": "Terra SE",
       "withBg": "/img2/p5.jpeg",
-      "description": "Great value phone with sleek design.",
-      "price": 349.99,
+      "description": "Budget-friendly model with premium features and 3-year software support.",
+      "price": 399.99,
       "category": "Phone",
-      "rating": 4.4
+      "rating": 4.2
     }
   ],
   "screens": [
     {
       "id": 11,
-      "name": "Screen 1",
+      "name": "Quantum 27\" QHD",
       "withBg": "/img2/sc1.jpeg",
-      "description": "Full HD monitor with sharp color accuracy.",
-      "price": 129.99,
-      "category": "Screen",
-      "rating": 4.5
-    },
-    {
-      "id": 12,
-      "name": "Screen 2",
-      "withBg": "/img2/sc2.jpeg",
-      "description": "Ultra-wide screen for immersive viewing.",
-      "price": 199.99,
+      "description": "Designer monitor with 99% Adobe RGB coverage and HDR600 certification.",
+      "price": 449.99,
       "category": "Screen",
       "rating": 4.7
     },
     {
-      "id": 13,
-      "name": "Screen 3",
-      "withBg": "/img2/sc3.jpeg",
-      "description": "4K resolution screen with HDR support.",
-      "price": 299.99,
+      "id": 12,
+      "name": "Vista 34\" Curved",
+      "withBg": "/img2/sc2.jpeg",
+      "description": "Ultrawide gaming monitor with 144Hz refresh rate and G-Sync compatibility.",
+      "price": 699.99,
       "category": "Screen",
       "rating": 4.8
     },
     {
-      "id": 14,
-      "name": "Screen 4",
-      "withBg": "/img2/sc4.jpeg",
-      "description": "Portable screen ideal for travel or work on-the-go.",
-      "price": 179.99,
+      "id": 13,
+      "name": "Studio Pro 32\" 4K",
+      "withBg": "/img2/sc3.jpeg",
+      "description": "Reference-grade monitor for photographers and video editors.",
+      "price": 1299.99,
       "category": "Screen",
-      "rating": 4.4
+      "rating": 4.9
+    },
+    {
+      "id": 14,
+      "name": "Nomad 15\" Portable",
+      "withBg": "/img2/sc4.jpeg",
+      "description": "USB-C portable display with built-in battery for mobile professionals.",
+      "price": 299.99,
+      "category": "Screen",
+      "rating": 4.3
     }
   ],
   "chargers": [
     {
       "id": 16,
-      "name": "Charger 1",
+      "name": "TurboCharge 65W GaN",
       "withBg": "/img2/ch1.jpeg",
-      "description": "Fast-charging USB-C wall adapter.",
-      "price": 19.99,
+      "description": "Compact gallium nitride charger with foldable pins and 3 ports.",
+      "price": 49.99,
       "category": "Charger",
-      "rating": 4.6
+      "rating": 4.8
     },
     {
       "id": 17,
-      "name": "Charger 2",
+      "name": "AirFlow Wireless Pad",
       "withBg": "/img2/ch2.jpeg",
-      "description": "Compact wireless charger for phones.",
-      "price": 24.99,
-      "category": "Charger",
-      "rating": 4.3
-    },
-    {
-      "id": 18,
-      "name": "Charger 3",
-      "withBg": "/img2/ch3.jpeg",
-      "description": "Universal charger compatible with multiple devices.",
-      "price": 29.99,
-      "category": "Charger",
-      "rating": 4.2
-    },
-    {
-      "id": 19,
-      "name": "Charger 4",
-      "withBg": "/img2/ch4.jpeg",
-      "description": "Multi-port charging station for all devices.",
-      "price": 34.99,
+      "description": "15W fast wireless charger with cooling fan and LED indicators.",
+      "price": 39.99,
       "category": "Charger",
       "rating": 4.5
     },
     {
-      "id": 20,
-      "name": "Charger 5",
-      "withBg": "/img2/ch5.jpeg",
-      "description": "High-capacity power bank for long use.",
-      "price": 39.99,
+      "id": 18,
+      "name": "OmniCharge Station",
+      "withBg": "/img2/ch3.jpeg",
+      "description": "6-device charging hub with smart power distribution.",
+      "price": 89.99,
       "category": "Charger",
       "rating": 4.6
     },
     {
-      "id": 15,
-      "name": "Charger 6",
-      "withBg": "/img2/ch6.jpeg",
-      "description": "Portable solar-powered charger.",
-      "price": 49.99,
+      "id": 19,
+      "name": "PowerTank 20,000mAh",
+      "withBg": "/img2/ch4.jpeg",
+      "description": "Airport-friendly power bank with digital display and 30W PD charging.",
+      "price": 59.99,
       "category": "Charger",
       "rating": 4.7
     },
     {
-      "id": 26,
-      "name": "Charger 7",
-      "withBg": "/img2/ch7.jpeg",
-      "description": "Smart charger with auto shut-off technology.",
-      "price": 27.99,
+      "id": 20,
+      "name": "SolarSprint 10W",
+      "withBg": "/img2/ch5.jpeg",
+      "description": "Weather-resistant solar charger with built-in battery pack.",
+      "price": 79.99,
       "category": "Charger",
-      "rating": 4.3
+      "rating": 4.4
     }
   ],
   "mice": [
     {
       "id": 21,
-      "name": "Mouse 1",
+      "name": "Stealth Pro",
       "withBg": "/img2/m1.jpeg",
-      "description": "Ergonomic mouse with silent clicks.",
-      "price": 14.99,
+      "description": "Ambidextrous gaming mouse with 16,000 DPI optical sensor.",
+      "price": 69.99,
       "category": "Mouse",
-      "rating": 4.4
+      "rating": 4.8
     },
     {
       "id": 22,
-      "name": "Mouse 2",
+      "name": "ErgoFit Vertical",
       "withBg": "/img2/m2.jpeg",
-      "description": "Gaming mouse with customizable buttons.",
-      "price": 29.99,
+      "description": "Ergonomic mouse designed to reduce wrist strain during long work sessions.",
+      "price": 49.99,
       "category": "Mouse",
       "rating": 4.6
     },
     {
       "id": 23,
-      "name": "Mouse 3",
+      "name": "TravelMate Compact",
       "withBg": "/img2/m3.jpeg",
-      "description": "Wireless mouse with long battery life.",
-      "price": 19.99,
+      "description": "Ultra-lightweight wireless mouse with nano receiver storage.",
+      "price": 29.99,
       "category": "Mouse",
       "rating": 4.3
     },
     {
       "id": 24,
-      "name": "Mouse 4",
+      "name": "Designer Pro",
       "withBg": "/img2/m4.jpeg",
-      "description": "Compact mouse for travel and portability.",
-      "price": 17.99,
+      "description": "Precision mouse with customizable weights and RGB lighting.",
+      "price": 59.99,
       "category": "Mouse",
-      "rating": 4.1
+      "rating": 4.5
     }
   ],
   "laptops": [
     {
       "id": 30,
-      "name": "Laptop 1",
+      "name": "Spectre 14\" Ultrabook",
       "withBg": "/img2/l1.jpeg",
-      "description": "Lightweight laptop for students and professionals.",
-      "price": 599.99,
+      "description": "Business-class laptop with 18-hour battery and 2.8K OLED touchscreen.",
+      "price": 1399.99,
       "category": "Laptop",
-      "rating": 4.5
+      "rating": 4.7
     },
     {
       "id": 31,
-      "name": "Laptop 2",
+      "name": "Titan RTX Gaming",
       "withBg": "/img2/l2.jpeg",
-      "description": "High-end gaming laptop with advanced graphics.",
-      "price": 1299.99,
+      "description": "Desktop-replacement laptop with RTX 3080 and mechanical keyboard.",
+      "price": 2799.99,
       "category": "Laptop",
-      "rating": 4.8
+      "rating": 4.9
     },
     {
       "id": 32,
-      "name": "Laptop 3",
+      "name": "Converta 360",
       "withBg": "/img2/l3.jpeg",
-      "description": "Business laptop with fast performance and security features.",
-      "price": 999.99,
+      "description": "Versatile 2-in-1 with Wacom EMR stylus support for digital artists.",
+      "price": 1199.99,
       "category": "Laptop",
       "rating": 4.6
     },
     {
       "id": 33,
-      "name": "Laptop 4",
+      "name": "EcoBook Sustainable",
       "withBg": "/img2/l4.jpeg",
-      "description": "2-in-1 convertible laptop with touchscreen.",
-      "price": 849.99,
+      "description": "Environmentally-friendly laptop with recycled materials and low-power display.",
+      "price": 899.99,
       "category": "Laptop",
       "rating": 4.4
     },
     {
       "id": 34,
-      "name": "Laptop 5",
+      "name": "CodePro Developer Edition",
       "withBg": "/img2/l5.jpeg",
-      "description": "Budget-friendly laptop with solid specs.",
-      "price": 479.99,
+      "description": "Linux-optimized workstation with developer-focused keyboard layout.",
+      "price": 1599.99,
       "category": "Laptop",
-      "rating": 4.2
+      "rating": 4.8
     }
   ]
 }

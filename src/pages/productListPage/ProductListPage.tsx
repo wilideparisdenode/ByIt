@@ -1,75 +1,42 @@
-
 import { Link, useLocation } from "react-router-dom";
-import type { Product, Products } from "../../components/types/types";
-import { useFetch } from "../../hooks/useFetch";
+import type { Product } from "../../components/types/types";
+import { useFetch } from "../../hooks/useFetch.ts";
 import "./ProductListPage.css";
 
-type ProductCategory = keyof Products;
-
 export default function ProductListPage() {
-  const { data, isPending, error } = useFetch<Products>("./data.json");
-
-
-
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
   
-  if (data) {
-    Object.keys(data).forEach((key) => {
-      const items = data[key as keyof Products]; // Access the array of products
-      items.forEach((item) => {
-        item.quantity = 0; // Safely set the quantity
-      });
-    });
-  }
+  const { data, isPending, error } = useFetch<Product[]>(
+    `http://localhost:9000/api/products?${searchParams.toString()}`
+  );
 
-  const useQuery = () => new URLSearchParams(useLocation().search);
-  const query = useQuery().get('q')?.toLowerCase() || '';
-  console.log(query)
- 
-  
   if (isPending) return <div className="loading">Loading...</div>;
   if (error) return <div className="error">Error: {error}</div>;
-  if (!data) return <div className="no-data">No products available</div>;
-
-  const categories = Object.keys(data) as ProductCategory[];
+  if (!data?.length) return <div className="no-data">No products found matching your criteria</div>;
 
   return (
     <div className="product-list-container">
-      {categories.map((category) => {
-        const filteredProducts = data[category].filter((item: Product) => {
-          if (!query) return true;
-          return (
-            item.name.toLowerCase().includes(query) ||
-            item.description.toLowerCase().includes(query)
-          );
-        });
-
-        if (filteredProducts.length === 0) return null; // hide empty categories
-            
-        return (
-          <section key={category} className="product-category">
-            <h2 className="category-title">{category}</h2>
-            <div className="products-grid">
-              {filteredProducts.map((item: Product) => (
-                <div className="product-card" key={item.id}>
-                  <img
-                    src={item.withBg}
-                    alt={item.name}
-                    className="product-image"
-                  />
-                  <div className="product-info">
-                    <h4 className="product-name">{item.name}</h4>
-                    <p className="product-description">{item.description}</p>
-                    <p className="product-price">${item.price.toFixed(2)}</p>
-                    <button className="buy-button">
-                      <Link to={"/product-overview/" + item.id}>Add to Cart</Link>
-                    </button>
-                  </div>
-                </div>
-              ))}
+      <div className="products-grid">
+        {data.map((item: Product) => (
+          <div className="product-card" key={item.id}>
+            <img
+              src={item.image_url}
+              alt={item.name}
+              className="product-image"
+            />
+            <div className="product-info">
+              <h4 className="product-name">{item.name}</h4>
+              <p className="product-category">{item.category?.name}</p>
+              <p className="product-description">{item.description}</p>
+              <p className="product-price">${item.price}</p>
+              <button className="buy-button">
+                <Link to={`/product-overview/${item.id}`}>View Product</Link>
+              </button>
             </div>
-          </section>
-        );
-      })}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

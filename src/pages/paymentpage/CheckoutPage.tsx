@@ -48,7 +48,7 @@ export default function CheckoutPage() {
                 <div key={item.id} className="cart-item">
                   <div className="item-info">
                     <span className="item-name">{item.name}</span>
-                    <span className="item-price">${item.price.toFixed(2)}</span>
+                    <span className="item-price">${item.price}</span>
                   </div>
                   
                   <div className="quantity-controls">

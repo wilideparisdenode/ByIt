@@ -1,114 +1,127 @@
-/* General Reset */
-body, h1, h2, h3, h4, p {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .product-list-container {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    margin-top: 80px;
-  }
-  
-  /* Category Titles */
-  .category-title {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #333;
-    text-transform: capitalize;
-  }
-.product-category .products-grid {
-  
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr 1fr;
-        gap:1.5rem;
-        padding:1rem;
-        width:100%;
-    
-
-  }
-  
-  
-  /* Product Card */
-  .product-card {
-    width: 200px;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    transition: transform 0.2s ease;
-  }
-  
-  .product-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* Product Image */
-  .product-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  /* Info Section */
-  .product-info {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  /* Name & Description */
-  .product-name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #222;
-  }
-  
-  .product-description {
-    font-size: 0.95rem;
-    color: #555;
-  }
-  
-  /* Price */
-  .product-price {
-    width: fit-content;
-    padding: 5px;
-    border-radius: 20px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color:#333;
-   background-color: rgba(94, 253, 20, 0.2);
+.product-list-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  margin-top: 80px;
+  min-height: calc(100vh - 80px);
 }
-  
-  /* Button */
-  .buy-button {
-    padding: 0.6rem 1rem;
-    background-color: #1e88e5;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 0.95rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .buy-button:hover {
-    background-color: #1565c0;
-  }
-  .buy-button a {
-   color: wheat;
-  }
-  
-  /* States */
-  .loading,
-  .error,
-  .no-data {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #666;
-    padding: 2rem;
-  }
-  
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.product-description {
+  font-size: 0.95rem;
+  color: #555;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-price {
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  background-color: rgba(94, 253, 20, 0.2);
+}
+
+.buy-button {
+  padding: 0.6rem 1rem;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.buy-button:hover {
+  background-color: #1565c0;
+}
+
+.buy-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.loading,
+.error,
+.no-data {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 2rem;
+}
+.product-category {
+  font-size: 0.85rem;
+  color: #666;
+  background-color: #f0f0f0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* Searchbar specific styles */
+.nav-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-search select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.nav-search input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  flex-grow: 1;
+}
+
+.search_icon {
+  cursor: pointer;
+  padding: 0.5rem;
+}

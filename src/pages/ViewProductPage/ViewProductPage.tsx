@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useFetch } from "../../hooks/useFetch";
-import type { Products, Product } from "../../components/types/types";
+import { useFetch } from "../../hooks/useFetch.ts";
+import type { Product } from "../../components/types/types";
 import { useSelector, useDispatch } from "react-redux";
 import { addItem, updateQuantity } from "../../components/cartSlice";
 
 export default function ViewProductPage() {
   const { id } = useParams<{ id: string }>();
-  const { data } = useFetch<Products>("/data.json");
+  const { data } = useFetch<Product[]>("http://localhost:9000/api/products");
   const [product, setProduct] = useState<Product>();
+  const [rating, setRating] = useState<number>(0);
+  const [hoverRating, setHoverRating] = useState<number>(0);
   const dispatch = useDispatch();
 
   // Get cart items from Redux state
@@ -19,23 +21,18 @@ export default function ViewProductPage() {
   useEffect(() => {
     if (data && id) {
       const numericId = parseInt(id);
-      const found = getProductById(data, numericId);
-      setProduct(found);
+      const found = data?.find((product:Product) => product.id === numericId);
+      if (found) {
+        setProduct(found);
+        // Set initial rating from product data if available
+        if (found.rating) setRating(found.rating);
+      }
     }
   }, [id, data]);
 
-  function getProductById(data: Products, id: number): Product | undefined {
-    const categories = Object.keys(data) as (keyof Products)[];
-    for (const category of categories) {
-      const found = data[category].find((product) => product.id === id);
-      if (found) return found;
-    }
-    return undefined;
-  }
-
   const handleAddToCart = () => {
     if (product) {
-      dispatch(addItem(product)); // Dispatch addItem action
+      dispatch(addItem(product));
     }
   };
 
@@ -51,45 +48,69 @@ export default function ViewProductPage() {
     }
   };
 
-  return (
-    <div className="product-overview">
-      <div className="product-img">
-        <img src={product?.withBg} alt="Product" />
-      </div>
-      <div className="over-view">
-        <p>{product?.description}</p>
-        <h1>{product?.name}</h1>
-        <div>
-          <i className="bi bi-star"></i>
-          <i className="bi bi-star"></i>
-          <i className="bi bi-star"></i>
-          <i className="bi bi-star"></i>
-          <i className="bi bi-star"></i>
-        </div>
-        <span>0 review</span>
-        <span className="price">{product?.price}</span>
-        <div>
-          <h5>{product?.category}</h5>
-          <p>{product?.description}</p>
-        </div>
-      </div>
+  const handleRating = (selectedRating: number) => {
+    setRating(selectedRating);
+    // Here you would typically send the rating to your backend
+    // Example: api.updateProductRating(product.id, selectedRating);
+  };
 
-      <div className="set-price">
-        <p>
-          <span>Price:</span>
-          <span>{product?.price}</span>
-        </p>
-        {productQ > 0 ? (
-          <div>
-            <button onClick={handleIncrement}>+</button>
-            <p>{productQ}</p>
-            <button onClick={handleDecrement}>-</button>
+  return (
+    <div className="product-overview-container">
+      <div className="product-overview">
+        <div className="product-image-container">
+          <img src={product?.image_url} alt={product?.name} className="product-image" />
+        </div>
+        
+        <div className="product-details">
+          <h1 className="product-title">{product?.name}</h1>
+          <div className="product-category">{product?.category?.name}</div>
+          
+          <div className="product-rating">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <i
+                key={star}
+                className={`bi bi-star${(hoverRating || rating) >= star ? '-fill' : ''}`}
+                onMouseEnter={() => setHoverRating(star)}
+                onMouseLeave={() => setHoverRating(0)}
+                onClick={() => handleRating(star)}
+              />
+            ))}
+            <span className="rating-count">({product?.reviewCount || 0} reviews)</span>
           </div>
-        ) : (
-          <button className="addToC" onClick={handleAddToCart}>
-            Add to Cart
-          </button>
-        )}
+          
+          <p className="product-description">{product?.description}</p>
+          
+          <div className="product-price">${product?.price}</div>
+          
+          <div className="product-stock">
+            {product?.stock && product.stock > 0 
+              ? `In Stock (${product.stock} available)` 
+              : 'Out of Stock'}
+          </div>
+        </div>
+        
+        <div className="product-actions">
+          <div className="price-display">
+            <span>Price:</span>
+            <span className="price">${product?.price}</span>
+          </div>
+          
+          {productQ > 0 ? (
+            <div className="quantity-control">
+              <button onClick={handleDecrement}>-</button>
+              <span>{productQ}</span>
+              <button onClick={handleIncrement}>+</button>
+            </div>
+          ) : (
+            <button 
+              className="add-to-cart"
+              onClick={handleAddToCart}
+              disabled={!product?.stock || product.stock <= 0}
+            >
+              {product?.stock && product.stock > 0 ? 'Add to Cart' : 'Out of Stock'}
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

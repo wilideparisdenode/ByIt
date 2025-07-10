@@ -41,7 +41,7 @@ export default function ProductList() {
           return (
             <div className="item" key={product.id}>
               <div className="one">
-                <img src={product.withBg} alt={product.name} />
+                <img src={product.image_url} alt={product.name} />
                 <div className="Pinfor">
                   <h4>{product.name}</h4>
                   <p>{product.description}</p>

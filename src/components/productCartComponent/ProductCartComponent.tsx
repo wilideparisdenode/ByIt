@@ -13,7 +13,7 @@ const EMPTY_PRODUCT: Product = {
   withBg: '',
   description:'',
   price:0,
-  category:''
+  category:{}
 
 };
 

@@ -14,11 +14,14 @@
   export interface Product {
     id: number;
     name: string;
-    withBg: string;
+    image_url?: string;
     description:string;
-    category:string;
+    category?:category;
     price:number;
     quantity?:number;
+    stock?:number;
+    reviewCount?:number;
+    withBg?:string;
   }
 
 export type Option={
@@ -31,9 +34,13 @@ export type Data={
 }
 
 export type FormData={
-  name?:string,
-  userName?:string,
+  full_name?:string,
   email?:string,
-  password?:string
+  password?:string,
+  phone_number?:string,
+  address?:string,
 
+}
+export interface  category{
+  name?:string;
 }
